@@ -1,0 +1,17 @@
+{
+  "registeredUsers": [
+    "Default"
+  ],
+  "Default": {
+    "Health": 4,
+    "Medical": 2,
+    "Ammunition": 2,
+    "Karma": 4
+  },
+  "<@97448388605247488>": {
+    "Health": 4,
+    "Medical": 2,
+    "Ammunition": 2,
+    "Karma": 4
+  }
+}

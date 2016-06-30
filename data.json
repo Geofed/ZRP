@@ -1,0 +1,51 @@
+{
+	"locations" : [
+		{
+			"description" : "You come across an abandoned hospital",
+			"name" : "hospital",
+			"scenario ids" : [1]
+		},
+		{
+			"description" : "You find an decaying school",
+			"name" : "school",
+			"scenario ids" : [1]
+		}
+	],
+	"scenarios" : [
+		{
+			"id" : 1,
+			"description" : "You choose to go inside the {name}.\n You come across a group of survivours.",
+			"choices" : [
+				{
+					"command" : "Trade",
+					"action" : "Attempt to trade 2 ammunition for medical supplies",
+					"condition" : {"Ammunition" : 2},
+					"results" : [
+						{
+							"chance" : [5, 50, 5],
+							"description" : "",
+							"reward" : {
+    							"Medical": 1,
+    							"Ammunition": -2
+							} 
+						},
+						{
+							"chance" : [0, 5, 50],
+							"description" : "",
+							"reward" : {
+    							"Medical": 3,
+    							"Ammunition": -2
+							} 
+						},
+						{
+							"chance" : [50, 5, 0],
+							"description" : "They refuse to trade with you",
+							"reward" : {} 
+						}
+					]
+				}
+			]
+		}
+	]
+
+}
